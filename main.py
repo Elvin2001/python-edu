@@ -1,7 +1,3 @@
-# First program
+name = input("Здравствуйте, введите пожалуйста имя:\n")
+print(f"{name}, вы вошли в систему, спасибо за доверие!")
 
-name = "Elvin"
-age = 23
-
-print("Hi, my name is", name)
-print("I'm", age, "years old")
