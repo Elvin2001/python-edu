@@ -14,3 +14,4 @@ else:
     shopping_list.extend(["Мороженое", "Попкорн"])
 
 print(f"Всего товаров в корзине - {len(shopping_list)}\n, ваш список товаров: [{shopping_list}].")
+print(f"Первые 2 товара в корзине: {shopping_list[0:2]}")
