@@ -1,17 +1,23 @@
-shopping_list = ["Яблоки", "Молоко"]
-destination = input("Куда пойдёте, Сударь?\n")
+words = ["Привет", "Круто", "Здесь", "Место", "Кот", "Рыбалка"]
 
-if destination.lower() == "пикник":
-    print("Надо не забыть купить мясо и дрова!")
-    shopping_list.extend(["Мясо", "Дрова"])
+for word in words:
+    if "р" in word or "Р" in word:
+        print(f"Слово '{word}' - картавое!")
 
-elif destination.lower() == "гости":
-    print("Надо не забыть купить торт и вино!")
-    shopping_list.extend(["Торт", "Вино"])
+num = 0
+print("\n")
 
-else:
-    print("Хорошо, что никуда сегодня не идём... нужно что-то вкусненькое купить!")
-    shopping_list.extend(["Мороженое", "Попкорн"])
+for i in range(0, 10):
+    print(f"Current number: {num}")
+    num += 1
 
-print(f"Всего товаров в корзине - {len(shopping_list)}\n, ваш список товаров: [{shopping_list}].")
-print(f"Первые 2 товара в корзине: {shopping_list[0:2]}")
+my_number = 8
+
+while True:
+    for i in range(0, 10):
+        i += 1
+        if int(i) == my_number:
+            print("Восьмёрка")
+            break
+        else:
+            print("Восьмёрки не оказалось..")
